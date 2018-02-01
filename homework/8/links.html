@@ -69,10 +69,18 @@
         div.fourth a:hover {
             color: red
         }
-        
-        /*не срабатывает через тильду??? почему-то?*/
 
-        div.fifth~a {
+        /*не срабатывает через тильду??? почему-то?*/
+        div.fifth a {
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            font-size: 2em;
+            color: green;
+            border-right: solid 3px red;
+        }
+
+        div.fifth a~a {
             display: inline-block;
             width: 150px;
             text-align: center;
