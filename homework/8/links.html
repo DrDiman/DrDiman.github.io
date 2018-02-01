@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LINKS</title>
+    <style>
+        /*для всех способов a:hover кроме третьего*/
+
+        a:hover {
+            color: red
+        }
+
+        .first a {
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            font-size: 2em;
+            color: green;
+            border-right: solid 3px red;
+        }
+
+        .second>a {
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            font-size: 2em;
+            color: green;
+            border-right: solid 3px red;
+        }
+
+        a:hover {
+            color: red
+        }
+
+        .third div {
+            float: left;
+            width: 150px;
+            text-align: center;
+            border-right: solid 3px red;
+            font-size: 2em;
+        }
+
+        .third div a {
+            color: green;
+        }
+
+        .third div a:hover {
+            color: red
+        }
+
+        .third::after {
+            content: "any";
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        div.fourth~a {
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            font-size: 2em;
+            color: green;
+            border-right: solid 3px red;
+        }
+
+        div.fourth a {
+            display: inline-table;
+            width: 150px;
+            text-align: center;
+            font-size: 2em;
+            color: green;
+            border-right: solid 3px red;
+        }
+    </style>
+</head>
+
+<body>
+    1
+    <div class="first">
+        <a href="http://warnet.ws/" title="ржака">первая ссылка</a>
+        <a href="http://www.aliexpress.com/" title="али">втоарая ссылка</a>
+        <a href="https://epn.bz/ru/" title="epn">третья ссылка</a>
+        <a href="https://github.com/DrDiman" title="github">четвертая ссылка</a>
+        <a href="http://fe.it-academy.by/Cabinet/" title="academy">пятая ссылка</a>
+    </div>
+    <br>
+    <hr>
+    <br> 2
+    <div class="second">
+        <a href="http://warnet.ws/" title="ржака">первая ссылка</a>
+        <a href="http://www.aliexpress.com/" title="али">втоарая ссылка</a>
+        <a href="https://epn.bz/ru/" title="epn">третья ссылка</a>
+        <a href="https://github.com/DrDiman" title="github">четвертая ссылка</a>
+        <a href="http://fe.it-academy.by/Cabinet/" title="academy">пятая ссылка</a>
+    </div>
+    <br>
+    <hr>
+    <br> 3
+    <div class="third">
+        <div>
+            <a href="http://warnet.ws/" title="ржака">первая ссылка</a>
+        </div>
+        <div>
+            <a href="http://www.aliexpress.com/" title="али">втоарая ссылка</a>
+        </div>
+        <div>
+            <a href="https://epn.bz/ru/" title="epn">третья ссылка</a>
+        </div>
+        <div>
+            <a href="https://github.com/DrDiman" title="github">четвертая ссылка</a>
+        </div>
+        <div>
+            <a href="http://fe.it-academy.by/Cabinet/" title="academy">пятая ссылка</a>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+    <br>
+    <hr>
+    <br> 4
+    <div class="fourth">
+        <a href="http://warnet.ws/" title="ржака">первая ссылка</a>
+        <a href="http://www.aliexpress.com/" title="али">втоарая ссылка</a>
+        <a href="https://epn.bz/ru/" title="epn">третья ссылка</a>
+        <a href="https://github.com/DrDiman" title="github">четвертая ссылка</a>
+        <a href="http://fe.it-academy.by/Cabinet/" title="academy">пятая ссылка</a>
+    </div>
+    <br>
+    <hr>
+    <br>
+</body>
+
+</html>
