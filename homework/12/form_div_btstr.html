@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <!-- Последняя компиляция и сжатый CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Дополнение к теме -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Последняя компиляция и сжатый JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <span>Для публикации вашей статьи, заполните пожалуйста следующую форму:</span>
+        <form method="GET" enctype="application/x-www-form-urlencoded">
+            <div class="row">
+                <div class="col-md-2"> Название статьи:</div>
+                <div class="col-md-10">
+                    <input type="text" name="name" id="name" placeholder="название статьи">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">Рубрика:</div>
+                <div class="col-md-10 col-sm-12">
+                    <select name="article">
+                        <option value="1" selected>программирование</option>
+                        <option value="2">графика и дизайн</option>
+                        <option value="3">компьютерная техника</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"> Публикация:</div>
+                <div class="col-md-10 col-sm-3">
+                    <div class="publics">
+                        <input type="radio" name="site" value="1">на сайте</div>
+                    <div class="publics">
+                        <input type="radio" name="site" value="1">в журнале</div>
+                    <div class="publics">
+                        <input type="radio" name="site" value="3">на сайте и в журнале</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    Разрешить комментарии:
+                    <input type="checkbox" name="name" id="checkbox" checked>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">Текст статьи:</div>
+                <div class="col-md-12">
+                    <textarea name="cont_article" id="cont" rows="2"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Опубликовать">
+        </form>
+    </div>
+</body>
+</html>
