@@ -11,7 +11,7 @@
             font-size: 24px;
         }
 
-        img:hover {
+       div img:hover {
             z-index: 2;
             background-color: aquamarine;
         }
@@ -32,8 +32,16 @@
             margin-right: auto;
         }
 
+        .index {
+            z-index: 1;
+            position: absolute;
+            top: -156px;
+            left: -28px
+        }
+        
     </style>
 </head>
+
 <body>
     <div class="parent">
         <p>
@@ -44,12 +52,12 @@
         </p>
         <div class="images">
             <div class="first">
-                <img src="biohazard.png" alt="biohaz" style="z-index: -1">
-                <img src="Man-and-woman.png" alt="manwoman" style="z-index: -1">
+                <img src="biohazard.png" alt="biohaz">
+                <img src="Man-and-woman.png" alt="manwoman">
             </div>
             <div class="second">
-                <img src="Yin_and_Yang.png" alt="in and yang" style="z-index: -1">
-                <img src="No_smoking.png" alt="no_smoking" style="z-index: 1; position: absolute; top: -156px; left: -28px">
+                <img src="Yin_and_Yang.png" alt="in and yang">
+                <img src="No_smoking.png" alt="no_smoking" class="index">
             </div>
         </div>
     </div>
