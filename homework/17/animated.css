@@ -1,0 +1,64 @@
+/*1 строка навбара*/
+
+
+.first li:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.first a:hover {
+    border-bottom: solid 2px rgb(255, 201, 102);
+}
+
+.first:hover li:last-child {
+    transform: translateX(-695px)
+}
+
+
+/*2 строка навбара*/
+
+@keyframes SecondAnimated {
+    from {
+        border-top: solid 2px rgb(255, 201, 102)
+    }
+    33% {
+        border-right: solid 2px rgb(255, 201, 102)
+    }
+    66% {
+        border-bottom: solid 2px rgb(255, 201, 102)
+    }
+    to {
+        border-left: solid 2px rgb(255, 201, 102)
+    }
+}
+
+.second li:first-child {
+    animation: SecondAnimated 1s infinite;
+}
+
+
+/*3 строка навбара*/
+
+.third:hover li:nth-of-type(odd) {
+    transform: scale(1.5)
+}
+
+.third:hover li:nth-of-type(even) {
+    transform: scale(0.5)
+}
+
+
+/*4 строка навбара*/
+
+.fourth a {
+    display: block; background: white
+}
+
+.fourth li:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.fourth a:hover {
+    border-bottom: solid 2px rgb(255, 201, 102);
+    transform: scale(1.2);
+    text-shadow: rgb(255, 201, 102)
+}
