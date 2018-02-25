@@ -1,0 +1,78 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    width: 100%;
+    color: blue;
+    background: lightblue;
+    text-align: center;
+}
+
+span {
+    line-height: 50px;
+    font-size: 20px;
+    color: blue;
+}
+
+.content {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    flex-basis: 100px;
+    background-color: rgb(253, 230, 97);
+    margin-bottom: -10000px;
+    padding-bottom: 10000px;
+    order: 1;
+}
+
+.nav div {
+    margin-top: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.inf {
+    flex-basis: 100px;
+    flex-grow: 3;
+    padding: 5px;
+    background: url(ball.jpg) top right repeat-y;
+    margin-bottom: -10000px;
+    padding-bottom: 10000px;
+    order: 2;
+}
+
+.h1 {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold
+}
+
+img {
+    width: 200px;
+    float: left;
+    margin-right: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+.foot {
+    width: 100%;
+    color: blue;
+    background: lightblue;
+    text-align: center;
+}
