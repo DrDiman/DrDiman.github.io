@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IF</title>
+</head>
+
+<body>
+
+    <script>
+        var lastName = prompt("ваша фамилия?", "");
+        var firstName = prompt("Ваше имя?", "");
+        var patronymic = prompt("Ваше отчество?", "");
+        var age = prompt("Ваш возраст?", "");
+        var gender = confirm("ваш пол - мужской?");
+        var ageNumber = +age;
+        var ageNumberDays = ageNumber * 365;
+        var ageNumber5years = ageNumber + 5;
+        var pension = ageNumber >= 60;
+        
+        gender? "да":"нет", pension ? "да" : "нет";
+        alert("ваше ФИО:" + lastName + " " + firstName + " " + patronymic + "\n" + "ваш возраст в годах:" + " " + ageNumber + "\n" + "ваш возраст в днях:" + " " + ageNumberDays + "\n" + "через 5 лет вам будет:" + " " + ageNumber5years + "\n" + "ваш пол: мужской" + " " + gender + "\n" + "вы на пенсии:" + " " + pension + "\n")
+        
+
+
+    </script>
+</body>
+
+</html>
