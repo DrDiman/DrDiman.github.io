@@ -21,10 +21,18 @@
         var ageNumber5years = ageNumber + 5;
         var pension = ageNumber >= 60;
 
-        if (pension = true,
-            gender = true) {
-            alert("ваше ФИО:" + lastName + " " + firstName + " " + patronymic + "\n" + "ваш возраст в годах:" + " " + ageNumber + "\n" + "ваш возраст в днях:" + " " + ageNumberDays + "\n" + "через 5 лет вам будет:" + " " + ageNumber5years + "\n" + "ваш пол: мужской" + " " + gender + "\n" + "вы на пенсии:" + " " + pension + "\n")
+        if (pension == true) {
+            pension = "да"
         }
+        else { pension = "Нет" }
+
+        if (gender == true) {
+            gender = "да"
+        }
+        else   { gender = "нет" }
+
+        alert("ваше ФИО:" + lastName + " " + firstName + " " + patronymic + "\n" + "ваш возраст в годах:" + " " + ageNumber + "\n" + "ваш возраст в днях:" + " " + ageNumberDays + "\n" + "через 5 лет вам будет:" + " " + ageNumber5years + "\n" + "ваш пол: мужской" + " " + gender + "\n" + "вы на пенсии:" + " " + pension + "\n")
+
 
 
     </script>
