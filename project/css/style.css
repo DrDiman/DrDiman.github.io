@@ -5,7 +5,6 @@ html {
 body {
   height: 100%;
   font-weight: 300;
-  padding-top: 65px;
 }
 
 section {
@@ -34,32 +33,27 @@ section {
   list-style: none;
 }
 
-/* навигационное меню*/
+/*навигационное меню*/
 
 .navbar {
   font-weight: 700;
-  box-shadow: 0 1px 5px #666;
-  background-color: rgba(65, 65, 65, 0.95);
+  box-shadow: 0 1px 10px #666;
+  background-color: rgba(65, 65, 65, 0.9);
 }
 
 @media (min-width: 768px) {
-  .navbar ul.nav>li>a {
+  .navbar ul.nav li a {
     border-top: solid 5px transparent;
     padding-top: 20px;
     color: white;
+    transition-duration: 0.2s;
   }
-  .navbar ul.nav>li>a:hover {
+  .navbar ul.nav li a:hover {
     border-top-color: #ffb401;
     color: white;
+    transform: scale(1.05);
   }
-  .navbar ul.nav>li>a:hover:first-letter {
-    color: #ffb401;
-  }
-  .navbar ul.nav>li.active>a, .navbar ul.nav>li.open>a {
-    text-decoration: none;
-    border-top-color: #ffb401;
-  }
-  .navbar ul.nav>li.active>a:first-letter, .navbar ul.nav>li.open>a:first-letter {
+  .navbar ul.nav li a:hover:first-letter {
     color: #ffb401;
   }
 }
@@ -76,19 +70,21 @@ section {
 
 #main h1, #main h2 {
   text-align: center;
-  color: gray;
+  color: rgb(255, 255, 255);
 }
 
 #main h1 {
   font-weight: 700;
 }
 
-#all section#main {
-  width: 100%;
-  min-height: 850px;
-  background-image: url(src/background/bigexc.jpg);
+#main {
+  min-height: 550px;
+  background-color: rgba(255, 255, 255, 0.979);
+  background-image: url(../src/background/bigexc.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
 
 /*конец главной секции */
+
+/* секция сервис */
