@@ -21,6 +21,10 @@ section {
   padding-top: 0;
 }
 
+.no-padding-all {
+  padding: 0;
+}
+
 .no-padding-bottom {
   padding-bottom: 0;
 }
