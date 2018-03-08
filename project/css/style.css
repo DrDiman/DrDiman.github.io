@@ -42,6 +42,8 @@ section {
   margin-bottom: 20px;
 }
 
+/*рамка иконок*/
+
 .icon {
   display: inline-block;
   width: 50px;
@@ -54,6 +56,29 @@ section {
   margin: 0 auto 15px;
   text-align: center;
 }
+
+/*рамка иконок*/
+
+/*------------------*/
+
+/*подчеркивание*/
+
+.orangeLine {
+  margin-bottom: 20px;
+}
+
+.orangeLine:after {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 10px auto 20px;
+  background: #ffb401;
+}
+
+/*подчеркивание*/
+
+/*------------------*/
 
 /*навигационное меню*/
 
@@ -86,7 +111,9 @@ section {
   color: #ffb401;
 }
 
-/*конец навигационного меню*/
+/* навигационное меню*/
+
+/*------------------*/
 
 /* секция главной */
 
@@ -108,7 +135,7 @@ section {
 }
 
 #main {
-  min-height: 550px;
+  min-height: 600px;
   background-color: rgba(255, 255, 255, 0.979);
   background-image: url(../src/background/bigexc.jpg);
   background-attachment: fixed;
@@ -117,9 +144,9 @@ section {
 
 /*конец главной секции */
 
-/* секция сервис */
+/* секция техника */
 
-/* конец секция сервис */
+/* конец секция техника */
 
 /* секция портфолио */
 
@@ -127,12 +154,17 @@ section {
 
 /* контакты */
 
-.map {
-  height: 150px;
-  width: 100%;
-  border: 0;
-  margin-top: 10px;
+#contact ul {
+  list-style: none;
 }
+
+#contact li:before {
+  content: "\f058"
+}
+
+/* -----------------------*/
+
+/* соц сети*/
 
 #contact a {
   font-size: 1.8em;
@@ -142,6 +174,17 @@ section {
 
 #contact a:hover {
   color: #ffb401
+}
+
+/* соц сети*/
+
+/* -----------------------*/
+
+.map {
+  height: 150px;
+  width: 100%;
+  border: 0;
+  margin-top: 20px;
 }
 
 /*конец контакты */
