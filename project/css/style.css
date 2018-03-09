@@ -156,9 +156,21 @@ section {
 
 /*конец главной секции */
 
+/* -----------------------*/
+
 /* секция техника */
 
+.minipogr, .miniexc, .kara {
+  transition-duration: 0.2s;
+}
+
+.minipogr:hover, .miniexc:hover, .kara:hover {
+  transform: scale(0.9);
+}
+
 /* конец секция техника */
+
+/* -----------------------*/
 
 /* секция портфолио */
 
