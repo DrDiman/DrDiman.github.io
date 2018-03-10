@@ -277,6 +277,27 @@ body {
 
 /* -----------------------*/
 
+/* форма */
+
+.box-simple-right {
+  text-align: left;
+  margin-bottom: 20px;
+  border: solid 1px;
+  border-radius: 2%;
+  padding: 5px;
+  background-color: rgba(211, 211, 211, 0.5);
+}
+
+
+
+.box-simple-right button:hover {
+  background-color: #ffb401
+}
+
+/* -----------------------*/
+
+/* -----------------------*/
+
 /* иконки соц сети*/
 
 #contact a {
