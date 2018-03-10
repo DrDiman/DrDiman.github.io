@@ -1,10 +1,9 @@
-html {
+html, body {
   height: 100%;
 }
 
 body {
-  height: 100%;
-  font-weight: 300;
+  color: black
 }
 
 section {
@@ -161,8 +160,7 @@ section {
 
 #main {
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.979);
-  background-image: url(../src/background/bigexc.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, transparent 50%, rgba(0, 0, 0, 0.8) 100%), url(../src/background/bigexc.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -182,7 +180,6 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 130%);
- 
 }
 
 .tel h2:hover i {
@@ -265,8 +262,7 @@ section {
 
 #about {
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.979);
-  background-image: url(../src/background/bigexcAbout.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, transparent 50%, rgba(0, 0, 0, 0.8) 100%), url(../src/background/bigexcAbout.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -280,7 +276,6 @@ section {
   color: black;
 }
 
-
 #about h3 i {
   font-size: 35px;
 }
@@ -288,7 +283,6 @@ section {
 #about h3:hover i {
   color: #ffb401;
 }
-
 
 /*  секция О нас */
 
