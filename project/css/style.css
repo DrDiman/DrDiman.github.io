@@ -35,10 +35,6 @@ section {
 
 /*-----------------------------*/
 
-/*общие отступы сверху*/
-
-/*общие отступы сверху*/
-
 /*-----------------------------*/
 
 /*рамка иконок*/
@@ -60,6 +56,8 @@ section {
 
 /*------------------*/
 
+/*-----------------------------*/
+
 /*подчеркивание заглавий */
 
 .orangeLine {
@@ -77,31 +75,34 @@ section {
 
 /*подчеркивание*/
 
+/*-----------------------------*/
+
 /*------------------*/
 
 /*навигационное меню*/
 
 .navbar {
   font-weight: 700;
-  box-shadow: 0 1px 10px #666;
-  background-color: rgba(65, 65, 65, 0.9);
+  box-shadow: 0 1px 10px black;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media (min-width: 768px) {
-  .navbar ul.nav li a {
-    border-top: solid 5px transparent;
-    padding-top: 20px;
-    color: white;
-    transition-duration: 0.2s;
-  }
-  .navbar ul.nav li a:hover {
-    border-top-color: #ffb401;
-    color: white;
-    transform: scale(1.05);
-  }
-  .navbar ul.nav li a:hover:first-letter {
-    color: #ffb401;
-  }
+.navbar ul.nav li a {
+  border-top: solid 5px transparent;
+  padding-top: 20px;
+  color: white;
+  transition-duration: 0.2s;
+}
+
+.navbar ul.nav li a:hover {
+  background: transparent;
+  border-top-color: #ffb401;
+  color: white;
+  transform: scale(1.05);
+}
+
+.navbar ul.nav li a:hover:first-letter {
+  color: #ffb401;
 }
 
 .navbar-toggle {
@@ -112,7 +113,7 @@ section {
 
 /* --------------*/
 
-/* LOGO*/
+/* LOGO с вращением) */
 
 .logo {
   width: 50px;
@@ -130,7 +131,7 @@ section {
 }
 
 .logo:hover {
-  background-color: rgb(255, 217, 0);
+  background-color: #ffb401;
 }
 
 .logo:hover img {
@@ -150,9 +151,11 @@ section {
 
 /* LOGO*/
 
+/* навигационное меню*/
+
 /*------------------*/
 
-/* навигационное меню*/
+/*------------------*/
 
 /*------------------*/
 
@@ -160,7 +163,7 @@ section {
 
 #main {
   height: 100vh;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.8) 100%), url(../src/background/bigexc.jpg);
+  background: linear-gradient(90deg, rgba(60, 60, 60, 0.8) 0%, transparent 25%, transparent 75%, rgba(60, 60, 60, 0.8) 100%), url(../src/background/bigexc.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -170,6 +173,10 @@ section {
   color: rgb(255, 255, 255);
   font-weight: 700;
 }
+
+/*------------------*/
+
+/*------------------*/
 
 /*------------------*/
 
@@ -262,7 +269,7 @@ section {
 
 #about {
   height: 100%;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.8) 100%), url(../src/background/bigexcAbout.jpg);
+  background: linear-gradient(90deg, rgba(60, 60, 60, 0.8) 0%, transparent 25%, transparent 75%, rgba(60, 60, 60, 0.8) 100%), url(../src/background/bigexcAbout.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
