@@ -46,7 +46,7 @@ section {
 
 /*общие отступы сверху*/
 
-#vehicle, #photos, #contact {
+#vehicle, #photos, #about, #contact {
   padding-top: 65px
 }
 
@@ -172,7 +172,7 @@ section {
 /* секция главной */
 
 #main {
-  min-height: 600px;
+  height: 100vh;
   background-color: rgba(255, 255, 255, 0.979);
   background-image: url(../src/background/bigexc.jpg);
   background-attachment: fixed;
@@ -182,13 +182,11 @@ section {
 #main h1, #main h2 {
   text-align: center;
   color: rgb(255, 255, 255);
-}
-
-#main h1 {
   font-weight: 700;
 }
 
-#main a:hover {
+
+#main a {
   text-decoration: none;
 }
 
@@ -252,7 +250,8 @@ section {
 }
 
 .minipogr:hover, .miniexc:hover, .kara:hover {
-  transform: scale(0.9);
+  transform: scale(1.02);
+  box-shadow: 0 1px 10px #ffb401;
 }
 
 /* конец секция техника */
