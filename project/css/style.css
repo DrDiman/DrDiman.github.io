@@ -6,7 +6,7 @@ body {
   color: black
 }
 
-section {
+.section {
   position: relative;
   padding-top: 65px;
   padding-bottom: 65px;
@@ -97,7 +97,6 @@ section {
 .navbar ul.nav li a {
   border-top: solid 5px transparent;
   padding-top: 20px;
-  font-size: 1.15em;
   color: white;
   transition-duration: 0.2s;
 }
