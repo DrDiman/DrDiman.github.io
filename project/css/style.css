@@ -72,6 +72,22 @@ section {
 
 /*навигационное меню*/
 
+.logo {
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  transition-duration: 0.2s;
+}
+
+.logo:hover img {
+  transform: scale(1.05);
+}
+
 .navbar {
   font-weight: 700;
   box-shadow: 0 1px 10px black;
@@ -105,44 +121,6 @@ section {
 /* -----------------------*/
 
 /* -----------------------*/
-
-/* LOGO с вращением) */
-
-.logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: white;
-  float: left;
-  position: relative;
-}
-
-.logo img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.logo:hover {
-  background-color: #ffb401;
-}
-
-.logo:hover img {
-  animation-name: goingWheel;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
-
-@keyframes goingWheel {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/*------------------*/
 
 /*------------------*/
 
@@ -265,8 +243,6 @@ section {
   font-weight: 700;
   color: black;
 }
-
-
 
 #about h3 i {
   font-size: 50px;
