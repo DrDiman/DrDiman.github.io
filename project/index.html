@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Аренда мини спецтехники (экскаватор, погрузчик, вилочный погрузчик) в Минске и РБ. Цена 40 руб./час. Звоните +375(00) 123 45 67.">
     <title>Antitech</title>
     <!-- Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- my CSS-->
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <!-- icons css-->
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <!-- icon-->
     <link rel="shortcut icon" href="anti.png">
+
+
 </head>
 
 <body>
@@ -24,7 +27,7 @@
                 <div class="container">
                     <div class="navbar-header ">
                         <div class="logo">
-                            <a href="#all" class="navbar-brand">
+                            <a href="#all" title="Главная" class="navbar-brand">
                                 <img src="src/img/logo.png" alt="logo">
                             </a>
                         </div>
@@ -37,26 +40,26 @@
                     <div id="navigation" class="collapse navbar-collapse navbar-right">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="#all">Главная</a>
+                                <a href="#all" title="Главная">Главная</a>
                             </li>
                             <li>
-                                <a href="#vehicle">Техника</a>
+                                <a href="#vehicle" title="Техника">Техника</a>
                             </li>
                             <li>
-                                <a href="#about">О нас</a>
+                                <a href="#about" title="О нас">О нас</a>
                             </li>
                             <li>
-                                <a href="#photos">Портфолио</a>
+                                <a href="#photos" title="Наши объекты">Портфолио</a>
                             </li>
                             <li>
-                                <a href="#contact">Контакты</a>
+                                <a href="#contact" title="Контакты">Контакты</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </header>
-        <div id="main" class="section">
+        <section id="main" class="section">
             <div class="container hidden-sm hidden-md hidden-lg">
                 <div class="row">
                     <div class="col-xs-12">
@@ -78,7 +81,7 @@
             <div class=" container ">
                 <div class="row">
                     <div class="col-xs-12 tel">
-                        <a href="tel:+375111122331">
+                        <a href="tel:+375111122331" title="Звоните">
                             <h2 class="text-nowrap">
                                 <i class="fas fa-phone-square"></i> +375(00) 123 45 67
                             </h2>
@@ -86,16 +89,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section" id="vehicle">
+        </section>
+        <section class="section" id="vehicle">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        <span class="text-uppercase h2 orangeLine">Наша техника</span>
+                        <h2 class="text-uppercase orangeLine">Наша техника</h2>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 ">
-                        <a href="#drop_minipogr" class="btn minipogr" role="button" data-toggle="collapse">
-                            <img src="src/img/minipogr.jpg" alt="минипогрузчик" class="img-responsive ">
+                        <a href="#drop_minipogr" title="Подробнее" class="btn minipogr" role="button" data-toggle="collapse">
+                            <img src="src/img/minipogr.jpg" title="Подробнее" alt="минипогрузчик" class="img-responsive ">
                         </a>
                         <div id="drop_minipogr" class="col-xs-12 collapse">
                             <table class="table table-hover">
@@ -143,8 +146,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 ">
-                        <a href="#drop_miniexc" class="btn miniexc" role="button" data-toggle="collapse">
-                            <img src="src/img/miniexc.jpg" alt="миниэкскаватор" class="img-responsive">
+                        <a href="#drop_miniexc" title="Подробнее" class="btn miniexc" role="button" data-toggle="collapse">
+                            <img src="src/img/miniexc.jpg" title="Подробнее" alt="миниэкскаватор" class="img-responsive">
                         </a>
                         <div id="drop_miniexc" class="col-xs-12 collapse">
                             <table class="table table-hover">
@@ -188,8 +191,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 ">
-                        <a href="#drop_kara" class="btn kara" role="button" data-toggle="collapse">
-                            <img src="src/img/kara.jpg" alt="погрузчик" class="img-responsive">
+                        <a href="#drop_kara" title="Подробнее" class="btn kara" role="button" data-toggle="collapse">
+                            <img src="src/img/kara.jpg" title="Подробнее" alt="погрузчик" class="img-responsive">
                         </a>
                         <div id="drop_kara" class="col-xs-12 collapse">
                             <table class="table table-hover">
@@ -238,98 +241,104 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section" id="about">
+        </section>
+        <article class="section" id="about">
             <div class=" container">
                 <div class="row">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 text-center">
-                                <span class="text-uppercase h2 orangeLine">О нас</span>
+                                <h2 class="text-uppercase orangeLine">О нас</h2>
                             </div>
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class=" col-md-6 ">
-                                <div class="box-simple">
-                                    <h3>
-                                        <i class="far fa-check-circle"></i> Виды выполняемых нами работ:</h3>
-                                    <ol>
-                                        <li>
-                                            <i class="fas fa-check"></i> Рытье котлованов (фундаменты, фонтаны, искусственные водоемы, бассейны и
-                                            т.п.);
-                                        </li>
-                                        <li>
-                                            <i class="fas fa-check"></i> Рытье и засыпка траншей, ям для коммуникаций (канализация, газ, вода, электричество,
-                                            связь и т.п.)</li>
-                                        <li>
-                                            <i class="fas fa-check"></i> Разработка грунта с погрузкой на автомобили-самосвалы;</li>
-                                        <li>
-                                            <i class="fas fa-check"></i> Планировка площадей, откосов, выемок и насыпей;</li>
-                                        <li>
-                                            <i class="fas fa-check"></i> Уборка снега с парковок, дорог и тротуаров;</li>
-                                        <li>
-                                            <i class="fas fa-check"></i> Бурение скважин под фундамент диаметром 200 мм, 250 мм, 300 мм;</li>
-                                        <li>
-                                            <i class="fas fa-check"></i> и иные ландшафтные земляные работы.</li>
-                                    </ol>
+                    <article>
+                        <div class="container">
+                            <div class="row">
+                                <div class=" col-md-6 ">
+                                    <div class="box-simple">
+                                        <h3>
+                                            <i class="far fa-check-circle"></i> Виды выполняемых нами работ:</h3>
+                                        <ol>
+                                            <li>
+                                                <i class="fas fa-check"></i> Рытье котлованов (фундаменты, фонтаны, искусственные водоемы, бассейны
+                                                и т.п.);
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-check"></i> Рытье и засыпка траншей, ям для коммуникаций (канализация, газ, вода,
+                                                электричество, связь и т.п.)</li>
+                                            <li>
+                                                <i class="fas fa-check"></i> Разработка грунта с погрузкой на автомобили-самосвалы;</li>
+                                            <li>
+                                                <i class="fas fa-check"></i> Планировка площадей, откосов, выемок и насыпей;</li>
+                                            <li>
+                                                <i class="fas fa-check"></i> Уборка снега с парковок, дорог и тротуаров;</li>
+                                            <li>
+                                                <i class="fas fa-check"></i> Бурение скважин под фундамент диаметром 200 мм, 250 мм, 300 мм;</li>
+                                            <li>
+                                                <i class="fas fa-check"></i> и иные ландшафтные земляные работы.</li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class=" container">
-                        <div class="row">
-                            <div class=" col-md-6 col-md-offset-6 ">
-                                <div class="box-simple">
-                                    <h3>
-                                        <i class="fas fa-info-circle"></i> Что отличает нас:</h3>
-                                    <ol>
-                                        <li>
-                                            <i class="fas fa-exclamation-circle"></i> Возможность оформить заказ 7 дней в неделю, в т.ч. в праздничные дни;</li>
-                                        <li>
-                                            <i class="fas fa-exclamation-circle"></i> Индивидуальный подход к каждому заказчику;</li>
-                                        <li>
-                                            <i class="fas fa-exclamation-circle"></i> Собственный эвакуатор для оперативной транспортировки нашей спецтехники
-                                            на Ваш объект;</li>
-                                        <li>
-                                            <i class="fas fa-exclamation-circle"></i> Возможен как наличный, так и безналичный расчет;</li>
-                                        <li>
-                                            <i class="fas fa-exclamation-circle"></i> Доступные цены и скидки для постоянных клиентов.</li>
-                                    </ol>
+                    </article>
+                    <article>
+                        <div class=" container">
+                            <div class="row">
+                                <div class=" col-md-6 col-md-offset-6 ">
+                                    <div class="box-simple">
+                                        <h3>
+                                            <i class="fas fa-info-circle"></i> Что отличает нас:</h3>
+                                        <ol>
+                                            <li>
+                                                <i class="fas fa-exclamation-circle"></i> Возможность оформить заказ 7 дней в неделю, в т.ч. в праздничные дни;</li>
+                                            <li>
+                                                <i class="fas fa-exclamation-circle"></i> Индивидуальный подход к каждому заказчику;</li>
+                                            <li>
+                                                <i class="fas fa-exclamation-circle"></i> Собственный эвакуатор для оперативной транспортировки нашей спецтехники
+                                                на Ваш объект;</li>
+                                            <li>
+                                                <i class="fas fa-exclamation-circle"></i> Возможен как наличный, так и безналичный расчет;</li>
+                                            <li>
+                                                <i class="fas fa-exclamation-circle"></i> Доступные цены и скидки для постоянных клиентов.</li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class=" container">
-                        <div class="row">
-                            <div class=" col-md-6 ">
-                                <div class="box-simple">
-                                    <h3>
-                                        <i class="far fa-question-circle"></i> Нам достаточно Вашего звонка и информации о Вашей заявке:</h3>
-                                    <ol>
-                                        <li>
-                                            <i class="fas fa-question-circle"></i> Когда и где будут производиться работы;</li>
-                                        <li>
-                                            <i class="fas fa-question-circle"></i> Особенности работ, их характер;</li>
-                                        <li>
-                                            <i class="fas fa-question-circle"></i> Возможность подъезда к месту производства работ; </li>
-                                        <li>
-                                            <i class="fas fa-question-circle"></i> Наличие наземных и подземных электро-, газо-, водо- коммуникаций и иных
-                                            помех в месте проводимых работ.</li>
-                                    </ol>
+                    </article>
+                    <article>
+                        <div class=" container">
+                            <div class="row">
+                                <div class=" col-md-6 ">
+                                    <div class="box-simple">
+                                        <h3>
+                                            <i class="far fa-question-circle"></i> Нам достаточно Вашего звонка и информации о Вашей заявке:</h3>
+                                        <ol>
+                                            <li>
+                                                <i class="fas fa-question-circle"></i> Когда и где будут производиться работы;</li>
+                                            <li>
+                                                <i class="fas fa-question-circle"></i> Особенности работ, их характер;</li>
+                                            <li>
+                                                <i class="fas fa-question-circle"></i> Возможность подъезда к месту производства работ; </li>
+                                            <li>
+                                                <i class="fas fa-question-circle"></i> Наличие наземных и подземных электро-, газо-, водо- коммуникаций и иных
+                                                помех в месте проводимых работ.</li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
-        </div>
-        <div class="section" id="photos">
+        </article>
+        <section class="section" id="photos">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        <span class="text-uppercase h2 orangeLine">Наши объекты</span>
+                        <h2 class="text-uppercase orangeLine">Наши объекты</h2>
                     </div>
                     <div class="col-xs-12 col-md-8 col-md-push-2">
                         <div id="portfolio" class="carousel slide" data-ride="carousel">
@@ -401,20 +410,20 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="contact" class="section no-padding-bottom">
+        </section>
+        <section id="contact" class="section no-padding-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        <span class="text-uppercase h2 orangeLine">Контакты</span>
+                        <h2 class="text-uppercase orangeLine">Контакты</h2>
                     </div>
                     <div class="col-xs-12 col-sm-6">
                         <div class="box-simple">
                             <div class="icon">
                                 <i class="far fa-compass"></i>
                             </div>
-                            <h4>Адрес</h4>
-                            <address> г. Минск
+                            <h3>Адрес</h3>
+                            <address class="h4"> г. Минск
                                 <br> ул. Будславская, дом 2
                             </address>
                         </div>
@@ -422,11 +431,11 @@
                             <div class="icon">
                                 <i class="fas fa-phone-volume"></i>
                             </div>
-                            <h4>Звоните!</h4>
-                            <h5>Подробная информация поможет нам правильно подобрать технику и оптимизировать Ваши расходы.</h5>
-                            <p>
-                                <strong>+375(00) 123 45 67</strong>
-                            </p>
+                            <h3>Звоните!</h3>
+                            <p>Подробная информация поможет нам правильно подобрать технику и оптимизировать Ваши расходы.</p>
+                            <h4>
+                                <b>+375(00) 123 45 67</b>
+                            </h4>
                         </div>
                         <div class="box-simple">
                             <div class="icon">
@@ -448,11 +457,11 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6">
-                        <div class=" box-simple-right">
+                        <div class=" box-simple">
                             <div class="icon">
                                 <i class="fas fa-pencil-alt"></i>
                             </div>
-                            <h4>Форма обратной связи</h4>
+                            <h3>Форма обратной связи</h3>
                             <form action="http://fe.it-academy.by/TestForm.ph" method="get">
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -498,29 +507,30 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class=" col-xs-12">
-                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1173.7243229791063!2d27.5364723582267!3d53.95930029502798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc5c019bfa7c7%3A0xa02ca7ab71c8222a!2z0YPQu9C40YbQsCDQkdGD0LTRgdC70LDQstGB0LrQsNGPIDIsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1520444237461"
-                            allowfullscreen>
-                        </iframe>
+            <nav>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class=" col-xs-12 ">
+                            <iframe class="map" title="Наше расположение на карте" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1173.7243229791063!2d27.5364723582267!3d53.95930029502798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc5c019bfa7c7%3A0xa02ca7ab71c8222a!2z0YPQu9C40YbQsCDQkdGD0LTRgdC70LDQstGB0LrQsNGPIDIsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1520444237461"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
+                </div>
+            </nav>
+        </section>
+        <div class="container footer">
+            <div class="row ">
+                <div class="col-xs-12 ">
+                    <span> Copyright &copy; Dzmitry Astraukh</span>
+                    <a href="mailto:d.astraukh@gmail.com?subject=Вопросы+по+HTML" title="Пишите письма =)">Send Mail</a>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <span> Copyright &copy; Dzmitry Astraukh</span>
-                        <a href="mailto:d.astraukh@gmail.com?subject=Вопросы+по+HTML">Send Mail</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <!-- min bootstrapJS -->
     <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

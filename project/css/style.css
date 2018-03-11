@@ -1,19 +1,25 @@
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../webfonts/Merriweather/Merriweather-Bold.ttf') format('truetype'), url('../webfonts/Merriweather/Merriweather-Regular.ttf') format('truetype')
+}
+
 html, body {
   height: 100%;
 }
 
 body {
-  color: black
+  color: black;
+  font-family: serif, Verdana, Tahoma;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Merriweather, serif, Verdana;
 }
 
 .section {
   position: relative;
   padding-top: 65px;
   padding-bottom: 65px;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .no-padding-top {
@@ -51,7 +57,7 @@ body {
 
 /* -----------------------*/
 
-/*подчеркивание заглавий */
+/*подчеркивание заглавий в виде блоков */
 
 .orangeLine {
   margin-bottom: 20px;
@@ -89,7 +95,8 @@ body {
 }
 
 .navbar {
-  font-weight: 700;
+  font-family: Merriweather, serif, Verdana;
+  font-size: 12px;
   box-shadow: 0 1px 10px black;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -255,9 +262,13 @@ body {
   text-align: left;
   margin-bottom: 20px;
   border: solid 1px;
-  border-radius: 0 20%;
+  border-radius: 10px;
   padding: 5px;
   background-color: rgba(211, 211, 211, 0.5);
+}
+
+h3 {
+  margin-top: 10px;
 }
 
 /* -----------------------*/
@@ -279,16 +290,12 @@ body {
 
 /* форма */
 
-.box-simple-right {
-  text-align: left;
-  margin-bottom: 20px;
-  border: solid 1px;
-  border-radius: 2%;
-  padding: 5px;
-  background-color: rgba(211, 211, 211, 0.5);
+.box-simple button {
+  width: 100%;
+  text-align: center;
 }
 
-.box-simple-right button:hover {
+.box-simple button:hover {
   background-color: #ffb401
 }
 
@@ -330,6 +337,7 @@ body {
   height: 150px;
   width: 100%;
   border: 0;
+  border-radius: 10px;
   margin-top: 20px;
 }
 
@@ -337,7 +345,7 @@ body {
 
 /* -----------------------*/
 
-footer {
+.footer {
   text-align: right;
   color: white;
   height: 100%;
