@@ -8,6 +8,7 @@ html, body {
 }
 
 body {
+  position: relative;
   color: black;
   font-family: serif, Verdana, Tahoma;
 }
@@ -108,13 +109,13 @@ h1, h2, h3, h4, h5, h6 {
   transition-duration: 0.2s;
 }
 
-.navbar ul.nav li a:hover {
+.navbar ul.nav li a:hover, .navbar ul.nav li a:focus {
   background: transparent;
   border-bottom-color: #ffb401;
   transform: scale(1.05);
 }
 
-.navbar ul.nav li a:hover:first-letter {
+.navbar ul.nav li a:hover:first-letter, .navbar ul.nav li a:focus:first-letter {
   color: #ffb401;
 }
 
