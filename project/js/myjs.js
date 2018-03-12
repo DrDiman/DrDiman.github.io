@@ -29,10 +29,9 @@ $(document).ready(function () {
 
  //коллапс меню после нажатия на подменю
 
-$(function(){
-  $(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-      $(this).collapse('hide');
-    }
-  });
-});
+$(function(){ 
+     var navMain = $(".navbar-collapse"); 
+     navMain.on("click", "a:not([data-toggle])", null, function () {
+         navMain.collapse('hide');
+     });
+ });
