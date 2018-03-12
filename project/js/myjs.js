@@ -25,3 +25,9 @@ $(document).ready(function () {
         $('body,html').animate({ scrollTop: top }, 500);
     });
 });
+
+
+ //коллапс меню после нажатия на подменю
+$('.navbar-collapse').on('click', 'a', function (e) {
+    $(e.delegateTarget).collapse('toggle');
+});
