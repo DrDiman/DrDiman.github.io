@@ -262,10 +262,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .minipogr a span, .miniexc a span, .kara a span {
   display: block;
-  margin: 185px auto;
+  margin: 160px auto;
   font-size: 18px;
   color: white;
   text-shadow: 1px 1px 1px #545454;
+  transform: translate(0%, -65%);
 }
 
 .minipogr:hover a, .miniexc:hover a, .kara:hover a   {
