@@ -229,58 +229,83 @@ h1, h2, h3, h4, h5, h6 {
 
 /* секция техника */
 
-.my-tech {
-  margin-bottom: 20px;
+@media all and ( max-width: 375px) {
+  .minipogr, .miniexc, .kara {
+    margin: 5px;
+    position: relative;
+    transition-duration: 0.2s;
+  }
+  .minipogr:hover, .miniexc:hover, .kara:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1px 10px #ffb401;
+  }
+  .minipogr a, .miniexc a, .kara a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(128, 128, 128, 0.864) 0%, transparent 70%);
+    border: 0;
+    opacity: 1;
+  }
+  .minipogr a span, .miniexc a span, .kara a span {
+    display: block;
+    margin: 160px auto;
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 1px #545454;
+    transform: translate(0%, 65%);
+  }
 }
 
-.minipogr, .miniexc, .kara {
-  margin: 5px;
-  position: relative;
-  transition-duration: 0.2s;
-}
-
-.minipogr:hover, .miniexc:hover, .kara:hover {
-  transform: scale(1.02);
-  box-shadow: 0 1px 10px #ffb401;
-}
-
-.minipogr a, .miniexc a, .kara a {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, rgba(128, 128, 128, 0.864) 0%, transparent 70%);
-  border: 0;
-  opacity: 0;
-  transition-property: opacity;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-
-.minipogr a span, .miniexc a span, .kara a span {
-  display: block;
-  margin: 160px auto;
-  font-size: 18px;
-  color: white;
-  text-shadow: 1px 1px 1px #545454;
-  transition-property: transform;
-  transition-delay: 0.1s;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-
-.minipogr:hover a, .miniexc:hover a, .kara:hover a {
-  opacity: 1;
-}
-
-.minipogr:hover a span, .miniexc:hover a span, .kara:hover a span {
-  transform: translate(0%, -65%);
+@media all and ( min-width: 376px) {
+  .minipogr, .miniexc, .kara {
+    margin: 5px;
+    position: relative;
+    transition-duration: 0.2s;
+  }
+  .minipogr:hover, .miniexc:hover, .kara:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1px 10px #ffb401;
+  }
+  .minipogr a, .miniexc a, .kara a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(128, 128, 128, 0.864) 0%, transparent 70%);
+    border: 0;
+    opacity: 0;
+    transition-property: opacity;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+  .minipogr a span, .miniexc a span, .kara a span {
+    display: block;
+    margin: 160px auto;
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 1px #545454;
+    transition-property: transform;
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+  .minipogr:hover a, .miniexc:hover a, .kara:hover a {
+    opacity: 1;
+  }
+  .minipogr:hover a span, .miniexc:hover a span, .kara:hover a span {
+    transform: translate(0%, -65%);
+  }
 }
 
 dl {
+  margin-top: 65px;
   font-size: 20px;
   color: rgb(33, 33, 33);
 }
@@ -442,6 +467,5 @@ h3 {
   color: white;
   height: 100%;
   width: 100%;
-  box-shadow: 0 1px 10px black;
   background-color: rgba(0, 0, 0, 0.8);
 }
