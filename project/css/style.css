@@ -229,13 +229,74 @@ h1, h2, h3, h4, h5, h6 {
 
 /* секция техника */
 
+.my-tech {
+  margin: 10px;
+}
+
 .minipogr, .miniexc, .kara {
+  margin: 5px;
+  position: relative;
   transition-duration: 0.2s;
 }
 
 .minipogr:hover, .miniexc:hover, .kara:hover {
   transform: scale(1.02);
   box-shadow: 0 1px 10px #ffb401;
+}
+
+.minipogr a,  .miniexc a, .kara a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(128, 128, 128, 0.864) 0%, transparent 70%);
+  border: 0;
+  opacity: 0;
+  transition-property: opacity;
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.minipogr a span, .miniexc a span, .kara a span {
+  display: block;
+  margin: 185px auto;
+  font-size: 18px;
+  color: white;
+  text-shadow: 1px 1px 1px #545454;
+}
+
+.minipogr:hover a, .miniexc:hover a, .kara:hover a   {
+  opacity: 1;
+}
+
+/* -----------------------*/
+
+/* -----------------------*/
+
+/*  sprite **/
+
+.sprite-bob, .sprite-cat, .sprite-kom, .sprite-niss {
+  height: 50px;
+  background-repeat: no-repeat;
+}
+
+.sprite-bob {
+  background-image: url(../src/background/sprites/bob-sprite.png)
+}
+
+.sprite-cat {
+  background-image: url(../src/background/sprites/caterpillar-sprite.png)
+}
+
+.sprite-kom {
+  background-image: url(../src/background/sprites/komatsu-sprite.png)
+}
+
+.sprite-niss {
+  background-image: url(../src/background/sprites/nissan-sprite.png)
 }
 
 /* -----------------------*/

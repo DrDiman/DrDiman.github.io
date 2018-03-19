@@ -94,14 +94,17 @@
         </section>
         <section class="section" id="vehicle">
             <div class="container">
-                <div class="row">
+                <div class="row my-tech">
                     <div class="col-xs-12 text-center">
                         <h2 class="text-uppercase orangeLine">Наша техника</h2>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 ">
-                        <a href="#drop_minipogr" title="Подробнее" class="btn minipogr wow bounceInLeft" role="button" data-toggle="collapse">
+                        <div class="minipogr wow bounceInLeft">
                             <img src="src/img/minipogr.jpg" title="Подробнее" alt="минипогрузчик" class="img-responsive ">
-                        </a>
+                            <a href="#drop_minipogr" title="Подробнее" class="btn " role="button" data-toggle="collapse">
+                                <span>Подробнее о мини-погрузчике</span>
+                            </a>
+                        </div>
                         <div id="drop_minipogr" class="col-xs-12 collapse">
                             <table class="table table-hover">
                                 <tr>
@@ -148,9 +151,12 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12 ">
-                        <a href="#drop_miniexc" title="Подробнее" class="btn miniexc wow bounceInUp" role="button" data-toggle="collapse">
+                        <div class=" miniexc wow bounceInUp">
                             <img src="src/img/miniexc.jpg" title="Подробнее" alt="миниэкскаватор" class="img-responsive">
-                        </a>
+                            <a href="#drop_miniexc" title="Подробнее" class="btn " role="button" data-toggle="collapse">
+                                <span>Подробнее о мини-экскаваторе</span>
+                            </a>
+                        </div>
                         <div id="drop_miniexc" class="col-xs-12 collapse">
                             <table class="table table-hover">
                                 <tr>
@@ -192,10 +198,12 @@
                             </table>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12 ">
-                        <a href="#drop_kara" title="Подробнее" class="btn kara wow bounceInRight" role="button" data-toggle="collapse">
-                            <img src="src/img/kara.jpg" title="Подробнее" alt="погрузчик" class="img-responsive">
-                        </a>
+                    <div class="col-md-4 col-sm-6 col-xs-12 ">
+                        <div class="kara wow bounceInRight"> <img src="src/img/kara.jpg" title="Подробнее" alt="погрузчик" class="img-responsive">
+                            <a href="#drop_kara" title="Подробнее" class="btn " role="button" data-toggle="collapse">
+                                    <span>Подробнее о вилочном погрузчике</span>
+                            </a>
+                        </div>
                         <div id="drop_kara" class="col-xs-12 collapse">
                             <table class="table table-hover">
                                 <tr>
@@ -241,6 +249,20 @@
                             </table>
                         </div>
                     </div>
+                </div>
+
+                
+                <div class="row hidden-sm">
+                    <div class=" sprite-bob col-md-4"></div>
+                </div>
+                <div class="row hidden-sm">
+                    <div class=" sprite-cat col-md-4 col-sm-offset-3"></div>
+                </div>
+                <div class="row hidden-sm">
+                    <div class=" sprite-kom col-md-4 col-sm-offset-6"></div>
+                </div>
+                <div class="row hidden-sm">
+                    <div class=" sprite-niss col-md-4 col-sm-offset-9"></div>
                 </div>
             </div>
         </section>
@@ -495,7 +517,7 @@
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                             <label for="message">Сообщение</label>
-                                            <textarea id="message" class="form-control" placeholder="Введите сообщение" rows="7" required></textarea>
+                                            <textarea id="message" class="form-control" placeholder="Введите сообщение" rows="7" spellcheck="true" required></textarea>
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
