@@ -157,27 +157,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------*/
 
-/*------------------*/
-
-/* ссылка на телефон*/
-
-.tel {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 130%);
-}
-
-.tel h3:hover i {
-  color: #ffb401
-}
-
-.tel a {
-  text-decoration: none;
-}
-
-/*------------------*/
-
 /* -----------------------*/
 
 /*анимированный текст*/
@@ -223,6 +202,27 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/*------------------*/
+
+/*------------------*/
+
+/* ссылка на телефон*/
+
+.tel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 130%);
+}
+
+.tel h3:hover i {
+  color: #ffb401
+}
+
+.tel a {
+  text-decoration: none;
+}
+
 /* -----------------------*/
 
 /* -----------------------*/
@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 1px 10px #ffb401;
 }
 
-.minipogr a,  .miniexc a, .kara a {
+.minipogr a, .miniexc a, .kara a {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -255,8 +255,8 @@ h1, h2, h3, h4, h5, h6 {
   border: 0;
   opacity: 0;
   transition-property: opacity;
-  transition-delay: 0.2s;
-  transition-duration: 0.3s;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 }
 
@@ -266,11 +266,30 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   color: white;
   text-shadow: 1px 1px 1px #545454;
+  transition-property: transform;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.minipogr:hover a, .miniexc:hover a, .kara:hover a {
+  opacity: 1;
+}
+
+.minipogr:hover a span, .miniexc:hover a span, .kara:hover a span {
   transform: translate(0%, -65%);
 }
 
-.minipogr:hover a, .miniexc:hover a, .kara:hover a   {
-  opacity: 1;
+dl {
+  font-size: 20px;
+  color: rgb(33, 33, 33);
+}
+
+@media all and ( min-width: 376px) {
+  dl {
+    font-size: 24px;
+    color: rgb(33, 33, 33);
+  }
 }
 
 /* -----------------------*/
