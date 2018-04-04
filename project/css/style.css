@@ -103,6 +103,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* -----------------------*/
 
+.header {
+  user-select: none;
+}
+
+
 .navbar {
   font-family: Merriweather, serif, Verdana;
   font-size: 12px;
@@ -308,7 +313,6 @@ dl {
   margin-top: 65px;
   font-size: 20px;
   color: rgb(33, 33, 33);
-  text-shadow: 1px 1px 1px #545454;
 }
 
 @media all and ( min-width: 376px) {
@@ -365,7 +369,6 @@ dl {
 #about h3, #about ol {
   font-weight: 700;
   color: rgb(33, 33, 33);
-  text-shadow: 1px 1px 1px #545454;
 }
 
 #about h3 i {
