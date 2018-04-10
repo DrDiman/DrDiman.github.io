@@ -21,6 +21,7 @@ body {
 .no-padding {
   padding: 0;
 }
+
 /* -----------------------*/
 
 /* -----------------------*/
@@ -65,11 +66,13 @@ body {
   transform: scale(1.05);
 }
 
-.navbar-toggle {font-size: 2.4rem;
+.navbar-toggle {
+  font-size: 2.4rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #ffb401;
 }
+
 /* -----------------------*/
 
 /* -----------------------*/
@@ -95,8 +98,9 @@ body {
   background-size: cover;
 }
 
+
 .main p, .main a {
-  color: white;
+    color: white;
   text-shadow: 5px 5px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000, 0px 0px 5px #000;
   font-size: 2.7rem;
   text-decoration: none;
@@ -169,4 +173,20 @@ section.information {
 
 .panel-body {
   font-size: 2rem;
+}
+
+footer {
+  font-size: 1.5rem;
+  color: white;
+  box-shadow: 0 1px 10px black;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer h6 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+footer a {
+text-decoration: none;
+color: white;
 }
