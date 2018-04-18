@@ -83,6 +83,15 @@ section {
 
 /* -----------------------*/
 
+.breadcrumb {
+  margin-top: 70px;
+  font-size: 1.4rem;
+}
+
+/* -----------------------*/
+
+/* -----------------------*/
+
 .main div:nth-of-type(1) {
   height: 100vh;
   background-image: url(../src/background/main-background1.jpg);
@@ -162,15 +171,22 @@ section {
 }
 
 .blockquote-reverse {
+  margin-top: 30px;
   font-size: 1.8rem;
 }
 
+/* -----------------------*/
+
+/* -----------------------*/
+.vehicles table {
+  font-size: 1.4rem;
+}
 
 /* -----------------------*/
 
 /* -----------------------*/
 
-section.information {
+section.pay-information {
   background-color: rgb(237, 237, 237);
 }
 
@@ -187,11 +203,23 @@ section.information {
 
 /* -----------------------*/
 
+/* -----------------------*/
+
+/* -----------------------*/
+
+.reasons-information p {
+  font-size: 1.6rem;
+}
+
+/* -----------------------*/
+
+/* -----------------------*/
+
 footer {
   font-size: 1.5rem;
   color: white;
   box-shadow: 0 1px 10px black;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 footer h6 {
